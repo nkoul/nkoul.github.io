@@ -9,13 +9,13 @@
   </head>
   <body class="">
     <div class="text-center my-4">
-        <h4 class="text-center">Neil Koul</h1>
-        <h6 class="text-center">Computer Engineer & Cybersecurity</h2>
+        <h3 class="text-center">Neil Koul</h1>
+        <h4 class="text-center">Computer Engineer & Cybersecurity</h2>
     </div>
         <div class="container-md">
         <div class="row">
             <div class="col-md-2">
-                <h6>Links</h6>
+                <h5>Links</h5>
             </div>
             <div class="col-md-8 mb-2">
                 <a class="btn btn-outline-danger" href="https://github.com/nkoul">
@@ -32,9 +32,10 @@
                 </a>
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-md-2">
-                <h6>About</h6>
+                <h5>About</h5>
             </div>
             <div class="col-md-8">
                 <p>I am a graduate student at the University of Nebraska Omaha, Nebraska. 
@@ -45,23 +46,46 @@
                 </p>
             </div>
         </div>
+        <hr>
         <div class="row">
             <div class="col-md-2">
-                <h6>Work</h6>
+                <h5>Work</h5>
             </div>
             <div class="col-md-8">
-                <p>Graduate Researcher Assistant at NCITE</p>
-                <p>Wireless Security Analyst Inten at Idaho National Laboratory</p>
+                <p>Graduate Research Assistant at NCITE</p>
+                <p>Wireless Security Analyst Intern at Idaho National Laboratory</p>
                 <p>Strategic Deterrence Intern at National Strategic Research Insititute</p>
                 <p>Software Engineering Intern at Flywheel (now known as WP Engine)</p>
             </div>
         </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Awards</h5>
+            </div>
+            <div class="col-md-8">
+                <p>Design Award for RTD Test Set at the Senior Design Showcase, University of Nebraska Lincoln</p>
+                <p>SFS CyberCorps Scholarship, National Science Foundation</p>
+                <p>Chancellor's Scholarship, University of Nebraska Omaha</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-2">
+                <h5>Education</h5>
+            </div>
+            <div class="col-md-8">
+                <p>MS & BS in Cybersecurity from University of Nebraska Omaha (MS expected May 2023)</p>
+                <p>BS in Computer Engineering from the University of Nebraska Lincoln</p>
+            </div>
+        </div>
+        <hr>
         <div class="row">
            <div class="col-md-2">
-               <h6>Projects</h6>
+               <h5>Projects</h5>
            </div>
            <div class="col-md-8">
-            <ul class="nav nav-pills mb-2" id="myTab" role="tablist">
+            <ul class="nav nav-tabs mb-2" id="myTab" role="tablist">
                 <li class="nav-item bga" role="presentation">
                   <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">2022</button>
                 </li>
@@ -77,21 +101,22 @@
                     <h6>Resume Webpage</h6>
                     The page you are looking at now is this project. This was a project where I challenged myself to create a 
                     website in a couple hours and deploy it. Allowing me to review my skills in web development. As well as
-                    review my skills regarding deploying servers to the internet.
+                    review my skills regarding deploying servers to the internet (however the website is periodically updated
+                    for content). 
                     <hr>
                     <h6>Wireless Security Work</h6>
                     I have worked ona 5G Wireless Security project involving a multitude of skills. I used my skills in programming
                     to automate the set up of 5G cores, making it easier to carry out vulnerability analysis on them. I also leveraged
                     my knowledge of reverse engineering to reverse engineer the Radio Interface Layer of an Android phone using both
                     Ghidra for static analysis and Frida for a more dynamic approach.
-                    <hr>
+                    <!-- <hr>
                     <h6>Wireless Security work</h6>
                     RTD is used in nuclear reactors to determine the temperature of the water in a reactor. There is currently 
                     no hardware on the market to test the degradation of RTDs, and testing is only sold as a service. This project 
                     entailed working with a team of 2 computer and 2 electrical engineers producing a product for a client, Wolf 
                     Creek Nuclear Operating Corporation. We created a testing device that allows for our client to test RTDs at
                     a much lower cost than the service to test. This project involved a multitude of electrical and computer 
-                    engineering topics such as: 
+                    engineering topics such as:  -->
                 </div>
                 <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                     <h6>RTD Test Set</h6>
@@ -108,17 +133,88 @@
                     titled the "RTD Test Set" an enclosed multi-pcb custom designed circuit to measure three major tests required of the
                     NRC to ensure the accuracy of RTDs: Loop Current Step Response, Self-Heating Index, and Noise Analysis. Below are two
                     images of the completed project.
+                    <div class="row mt-2">
+                        <div class="col">
+                            <img src="rtd test set front.jpg" alt="Image of RTD test, a cream colored box with mutiple switches, knobs and an LCD." class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="rtd test set back.jpg" alt="Image of rear of RTD test set, cream box with 4 red and 4 black connectors, and a power connectore." class="img-fluid">
+                        </div>
+                    </div>
+
                     <hr>
-                    <h6></h6>
+
+                    <h6>Rouge Access Point</h6>
+                    <p>Created as a NULLify officer for members to learn about RougeAPs</p>
+                    <p>Used ESP32's as an access point with a fake login that looked similar to a popular hotel's WiFi login page.</p>
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://slides.com/neilkoul/nullify-rogue-aps/embed" width="576" height="420" title="NULLify RogueAP Meeting" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+
+                    <hr>
+                    
+                    <h6>Router Reverse Engineering</h6>
+                    <p>Reverse Engineering a router by pulling the firmware off of it, for a final project in Host-Based Vulnerability.</p>
+                    <p>Used a travel router and it's on board UART to pull firmware off and demonstrate that the firmware can be modified</p>
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://slides.com/neilkoul/hostbasedfinal/embed" width="576" height="420" title="Host-Based Final" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <hr>
                 </div>
                 <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
-                    Content
+                    <h6>BLE Keyboard</h6>
+                    <p>A term project for my embedded systems design course.</p>
+                    <p>Used an ESP32, desinged the schematics for the module to be used on a keyboard that I designed. This project was not fully sucessful but 
+                        allowed me to learn a great deal about designing embedded systems. I honed my PCB and low-level software design skills in this project.
+                    </p>
+
+                    <hr>
+
+                    <h6>Replay Attack on Wireless Doorbell</h6>
+                    <p>Created as a demonstration of RF capabilities of a Raspberry Pi with no extra hardware</p>
+                    <p>Used an off-the-shelf RTL-SDR from amazon to record messages from a wireless doorbell and replay them to trigger the doorbell without 
+                        hitting the original button. Used GQRX and gnuradio to complete this project.
+                    </p>
+
+                    <hr>
+
+                    <h6>8051-Based Computer</h6>
+                    <p>A term project for my microprocessor design course.</p>
+                    <p>An 8051 is an Intel-based microcontroller, which has been popular for many years. The 8051 can be used as a
+                    microprocessor, interfacing with external program memory and RAM.</p>
+                    <p>Overall Board Operation</p>
+                    <div class="ratio ratio-16x9 mb-2">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Hi1tO6YWb9Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <p>Keypad Operation</p>
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/qRz0dEmdtVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
+                    <hr>
+
+                    <h6>badUSBs</h6>
+                    <p>Project created as a NULLify officer for members to learn about physical security.</p>
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://slides.com/neilkoul/badusbs/embed" width="576" height="420" title="NULLify badUSBs" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+
+                    <hr>
+
+                    <h6>Smart Blind Opener</h6>
+                    <p>A term project for Engineering and Civilization class.</p>
+                    <p>Used an ESP8266 to create a smart blind opener and explain how the ESP8266 can be used a multitude of projects
+                    especially in projects that can be used for education.</p>
+                    <p></p>
+                    <div class="ratio ratio-4x3">
+                        <iframe src="https://slides.com/neilkoul/ecen-4960-term-project/embed" width="576" height="420" title="ECEN 4960 Term Project" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <hr>
                 </div>
               </div>
            </div>
-       </div>
+        </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>
